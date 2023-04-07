@@ -1,0 +1,510 @@
+/* * DEFAULT SETTINGS */
+
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:regular,italic,600,600italic,700,700italic);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Crimson Text;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+p {
+    font-weight: 600;
+}
+
+i {
+    font-size: 20px;
+    color: rgb(161, 161, 161);
+    margin: 0 5px;
+    transition: 0.5s;
+}
+
+i:hover {
+    color: rgb(202, 202, 202);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-to {
+    text-align: right;
+}
+
+.right-to {
+    text-align: left;
+}
+
+.adaptive-text-40 {
+    width: 40%;
+}
+
+.adaptive-text-30 {
+    width: 30%;
+}
+
+/* * HEADER OPTIONS */
+
+header {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.star-animation img {
+    max-width: 50px;
+    transition: 1.2s;
+}
+
+.star-animation img:hover {
+    transform: rotate(180deg);
+}
+
+.logo img {
+    width: 120px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* * ABOUT SECTION OPTIONS */
+
+.about {
+    background-color: rgba(182, 242, 94, 255);
+    padding: 180px 0;
+}
+
+.about img {
+    width: 50%;
+}
+
+.click-it {
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #42C69A, #705DBE) 1;
+    background-color: black;
+    font-family: Crimson Text;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+.click-it:hover {
+    transform: scale(0.95);
+    border-image: linear-gradient(to left, #42C69A, #705DBE) 1;
+}
+
+/* * AUTHOR SECTION */
+
+.author {
+    background-color: white;
+    padding: 180px 0;
+}
+
+.author img {
+    width: 25%;
+}
+
+/* * SLIDER OPTIONS */
+
+.jojo-slider {
+    flex-direction: column;
+    padding: 150px 0;
+    background-color: teal;
+    color: white;
+}
+
+.slider {
+    margin: 80px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slides {
+    display: none;
+    text-align: center;
+}
+
+.slide-logo {
+    display: none;
+    max-width: 80px;
+    min-width: 80px;
+    width: 80px;
+    margin: 0 20px;
+}
+
+.active-slide {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.active-slide-logo {
+    display: block;
+}
+
+.slides img {
+    max-width: 200px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 250px;
+    margin: 0 10px;
+}
+
+.left-arrow,
+.right-arrow {
+    cursor: pointer;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    transform: scale(1.1);
+}
+
+/* * PHANTOM BLOOD OPTIONS */
+
+.part-1 {
+    background-color: rgb(52, 57, 85);
+    color: white;
+    padding: 150px 0;
+}
+
+.part-1 img {
+    width: 35%;
+}
+
+/* * BATTLE TENDENCY OPTIONS */
+
+.part-2 {
+    background-color: coral;
+    color: white;
+    padding: 150px 0;
+}
+
+.part-2 img {
+    width: 40%;
+}
+
+/* * STARDUST CRUSADERS OPTIONS */
+
+.part-3 {
+    padding: 150px 0;
+    background-color: rgb(97, 0, 0);
+    color: white;
+}
+
+.part-3 img {
+    width: 50%;
+}
+
+/* * DIAMOND IS UNBREAKABLE OPTIONS */
+
+.part-4 {
+    padding: 150px 0;
+    background-color: rgb(0, 255, 149);
+    color: white;
+}
+
+.part-4 img {
+    width: 40%;
+}
+
+/* * VENTO AUREO OPTIONS */
+
+.part-5 {
+    padding: 150px 0;
+    background-color: rgb(255, 114, 255);
+    color: white;
+}
+
+.part-5 img {
+    width: 40%;
+}
+
+/* * STONE OCEAN OPTIONS */
+
+.part-6 {
+    padding: 150px 0;
+    background-color: cyan;
+}
+
+.part-6 img {
+    width: 45%;
+}
+
+/* * SBR OPTIONS */
+
+.part-7 {
+    padding: 150px 0;
+    background-color: rgb(55, 0, 128);
+    color: white;
+}
+
+.part-7 img {
+    width: 40%;
+}
+
+/* * JOJOLION OPTIONS */
+
+.part-8 {
+    padding: 150px 0;
+    background-color: yellow;
+}
+
+.part-8 img {
+    width: 40%;
+}
+
+/* * FOOTER OPTIONS */
+
+footer {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 20px 0;
+}
+
+.social-media {
+    padding: 10px 0;
+}
+
+.rickroll {
+    max-width: 200px;
+}
+
+.rickroll:hover {
+    animation-name: to-be-continued;
+    animation-duration: 0.7s;
+}
+
+/* * ADAPTIVES FOR TABLET\PHONE */
+
+@media screen and (max-width: 1023px) {
+    header {
+        height: 7%;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .star-animation img {
+        max-width: 40px;
+    }
+
+    .adaptive-text-40 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .adaptive-text-30 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .flex-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 70%;
+    }
+
+    .slide {
+        margin: 0 -10px;
+    }
+
+    .slide img {
+        width: 70%;
+        padding: 0 10px;
+    }
+
+    .active-slide {
+        flex-direction: row;
+    }
+
+    .author img {
+        width: 40%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .star-animation img {
+        max-width: 40px;
+    }
+
+    .adaptive-text-40 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .adaptive-text-30 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .flex-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 70%;
+    }
+
+    .slide {
+        margin: -30px 0;
+    }
+
+    .slider {
+        margin: 50px 0 0 0;
+    }
+
+    .slide img {
+        width: 70%;
+        padding: 0 10px;
+    }
+
+    .active-slide {
+        flex-direction: column-reverse;
+        margin: 5px;
+    }
+
+    .image {
+        width: 70%;
+    }
+
+    .author img {
+        width: 40%;
+    }
+
+    .part-1 img {
+        width: 70%;
+    }
+
+    .part-2 img {
+        width: 70%;
+    }
+
+    .part-3 img {
+        width: 70%;
+    }
+
+    .part-4 img {
+        width: 70%;
+    }
+
+    .part-5 img {
+        width: 70%;
+    }
+
+    .part-6 img {
+        width: 70%;
+    }
+
+    .part-7 img {
+        width: 70%;
+    }
+
+    .part-8 img {
+        width: 70%;
+    }
+
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* * KEYFRAME-ANIMATIONS */
+
+/* SLIDER ANIMATION */
+
+@keyframes slider {
+    0% {
+        scale: 0.8;
+        opacity: 0.5;
+        transform: translateX(100px);
+    }
+
+    50% {
+        scale: 0.8;
+        opacity: 0.8;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+/* TO-BE-CONTINUED ANIMATION */
+
+@keyframes to-be-continued {
+    0% {
+        rotate: 0%;
+    }
+
+    25% {
+        rotate: 5deg;
+    }
+
+    50% {
+        rotate: -5deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
